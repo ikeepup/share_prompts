@@ -35,7 +35,7 @@ const Feed = () => {
     }
 
     fecthData()
-  }, [searchText])
+  }, [])
 
   return (
     <section className="feed">
