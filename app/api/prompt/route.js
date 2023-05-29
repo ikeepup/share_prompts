@@ -11,3 +11,4 @@ export const GET = async (req, res) => {
     return new Response('Fail to fetch', { status: 500 })
   }
 }
+export const revalidate = false
