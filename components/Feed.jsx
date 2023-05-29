@@ -29,7 +29,7 @@ const Feed = () => {
 
   useEffect(() => {
     async function fecthData() {
-      const res = await fetch('/api/prompt')
+      const res = await fetch(`/api/prompt?t=${new Date().getTime()}`)
       const posts = await res.json()
       setPosts(posts)
     }
