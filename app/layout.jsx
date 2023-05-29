@@ -2,7 +2,7 @@ import '@styles/global.css'
 import Nav from '@components/Nav'
 import Provider from '@components/Provider'
 export const metadata = {
-  title: 'Proptopia',
+  title: 'SharePropmt',
   description: 'Discover & Share AI Prompts'
 }
 
