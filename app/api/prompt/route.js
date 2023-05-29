@@ -1,5 +1,8 @@
 import { connectToDb } from '@utils/database'
 import Prompt from '@models/prompt'
+
+export const revalidate = false
+export const fetchCache = 'force-no-store'
 export const GET = async (req, res) => {
   try {
     await connectToDb()
@@ -11,4 +14,3 @@ export const GET = async (req, res) => {
     return new Response('Fail to fetch', { status: 500 })
   }
 }
-export const revalidate = false
